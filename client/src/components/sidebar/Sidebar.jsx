@@ -12,12 +12,11 @@ export default function Sidebar() {
       <div className="sidebarItem">
       <span className="sidebarTitle">CATEGORIES</span>
       <ul className="sidebarList">
-        <li className="sidebarListItem">Life</li>
-        <li className="sidebarListItem">Music</li>
-        <li className="sidebarListItem">Style</li>
-        <li className="sidebarListItem">Sport</li>
-        <li className="sidebarListItem">Tech</li>
-        <li className="sidebarListItem">Cinema</li>
+{cats.map(c=>(
+
+        <li className="sidebarListItem">{c.name}</li>
+))}
+       
       </ul>
       </div>
       <div className="sidebarItem">
