@@ -19,7 +19,8 @@ const handleSubmit= async (e)=> {
       username,
       email,
       password
-    });
+    }
+    );
 res.data && window.location.replace("/login");
 
   }catch(err){

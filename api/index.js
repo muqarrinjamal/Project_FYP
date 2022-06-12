@@ -14,11 +14,11 @@ app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect("mongodb+srv://root:root@cluster0.w6zvv.mongodb.net/blog?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify:true
+     useCreateIndex: true,
+     useFindAndModify:false,
   })
   .then(console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
