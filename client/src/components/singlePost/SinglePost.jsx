@@ -78,7 +78,7 @@ const handleUpdate= async ()=>{
           )}
           </h1>
           )
-}
+          }
           <div className="singlePostInfo">
               <span className="singlePostAuthor">Author: 
               <Link to={`/?user=${post.username}`} className="link">
